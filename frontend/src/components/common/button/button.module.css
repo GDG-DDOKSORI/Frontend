@@ -4,22 +4,43 @@
     justify-content: center; /* 가로 가운데 정렬 */
     color: white;
     width: clamp(20px, 68%, 400px);
-    aspect-ratio: 4.52 / 1;
+    aspect-ratio: 4.52 / 1;  
     background: #497E45;
     border-radius: clamp(10px, 3vw, 16px);
     font-family: 'Pretendard-Regular';
     font-weight: bold;
     padding: 0 16px; /* 여백을 주어 아이콘과 텍스트가 겹치지 않도록 조정 */
     cursor: pointer; 
+    box-shadow: 4px 4px 4px #00000040;
 }
-  
+.button:hover,
+.button:active{
+  transform: scale(0.96);
+  transition: transfrom 0.1s ease;
+  background-color: #3A6337;
+  box-shadow: 4px 4px 4px #00000040;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1vw); /* 오른쪽으로 살짝 이동 */
+  }
+  100% {
+    transform: translateX(0); /* 다시 원래 위치로 */
+  }
+}
+
   .text {
-    margin-right: 8px; /* 아이콘과 텍스트 사이에 간격을 추가 */
+    width : 80%;
   }
   
   .arrow {
     display: flex;
     justify-content: center; /* 화살표도 가로로 가운데 정렬 */
     align-items: center; /* 화살표도 세로로 가운데 정렬 */
+    animation: moveRight 2s infinite ease-in-out;
   }
   

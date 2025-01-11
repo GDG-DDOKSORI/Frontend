@@ -1,0 +1,59 @@
+.container {
+  margin: auto;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  width: clamp(50px, 100%, 500px);
+  font-family: "Pretendard-Regular";
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center; /* 가로 가운데 정렬 */
+}
+
+.title {
+  font-family: "Pretendard-Regular";
+
+  padding: clamp(30px, 16%, 50px) 0 clamp(12px, 3%, 20px) 0;
+  color: #434343;
+  font-size: clamp(24px, 8vw, 50px);
+  font-weight: bold;
+  text-align: left;
+  margin: 0 14%;
+  margin-left: 0px;
+}
+
+.context {
+  font-family: "Pretendard-Regular";
+  color: #434343;
+  font-size: clamp(12px, 3.5vw, 18px);
+  font-weight: bold;
+  text-align: left;
+  margin: 0 14%;
+}
+
+.clover {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  justify-content: center;
+  align-items: center; /* Center horizontally */
+  text-align: center;
+}
+
+.mainImg {
+  width: clamp(20px, 82%, 420px);
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  justify-content: center;
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  padding: clamp(30px, 16%, 50px) 0 clamp(12px, 3%, 20px) 0;
+  gap: clamp(30px, 16%, 50px);
+}
+
+.backButton {
+  margin-top: 10px;
+}

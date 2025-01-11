@@ -1,3 +1,8 @@
+.header{
+  display:flex;
+  padding-top : 2vh;
+  justify-content: center;
+}
 
 .title {  
   font-family: 'yg-jalnan';
@@ -7,13 +12,15 @@
   font-weight: bold;
   text-align: center;
   text-shadow: 0px 1vw 1vw rgba(0, 0, 0, 0.25);
+  z-index : 100;
 }
 
-.titleImg{  
-  position: absolute; /* 이미지 위치를 절대적으로 설정 */
-  top: clamp(5px,1%,10px);
-  left: 50%;
-  transform: translate(200%, 0%);
+.titleImg{ 
+  display: flex;
+  position: absolute;
+  right: 24px;
+  top : 40px;
+  justify-content: right;
   width: clamp(60px,10%,72px);
 }
 
@@ -36,7 +43,7 @@
 
 .backText{
   font-family: 'Pretendard-Regular';
-  font-size: clamp(7px,4vw,22.5px);
+  font-size: clamp(6px,3.2vw,20px);
   width: 50%;
   color: white;
   position: absolute; /* 이미지 위치를 절대적으로 설정 */

@@ -27,6 +27,7 @@
 }
 
 .clover {
+  padding-top : clamp(12px, 8vh ,40px);
   display: flex;
   flex-direction: column;  /* Stack the elements vertically */
   justify-content: center;

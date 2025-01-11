@@ -1,8 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./smallButton.module.css";
+import styles from "./backbutton.module.css";
+import { GrFormPrevious } from "react-icons/gr";
 
-const SmallButton = ({ text, link }) => {
+const BackButton = ({ link }) => {
   const navigate = useNavigate();
 
   // 링크를 클릭할 때, 해당 경로로 이동하는 함수
@@ -13,12 +14,10 @@ const SmallButton = ({ text, link }) => {
   };
 
   return (
-    <div>
-      <div className={styles.SmallButton} onClick={handleClick}>
-        <div className={styles.text}>{text}</div>
-      </div>
+    <div className={styles.backbutton} onClick={handleClick}>
+      <GrFormPrevious />
     </div>
   );
 };
 
-export default SmallButton;
+export default BackButton;
